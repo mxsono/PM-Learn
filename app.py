@@ -5,8 +5,8 @@ from supabase import create_client, Client
 st.set_page_config(page_title="PMP Learning Platform", layout="centered")
 
 # Connexion à Supabase (utilisez les secrets Streamlit en production)
-SUPABASE_URL = st.secrets.get("SUPABASE_URL", "VOTRE_SUPABASE_URL")
-SUPABASE_KEY = st.secrets.get("SUPABASE_KEY", "VOTRE_SUPABASE_KEY")
+SUPABASE_URL = st.secrets.get("SUPABASE_URL", "https://zujrcxegdjazqfduexbm.supabase.co")
+SUPABASE_KEY = st.secrets.get("SUPABASE_KEY", "sb_publishable_4U41r-EZVVb8tkgAvdnEOA_MXY_lKGB")
 
 @st.cache_resource
 def init_supabase():
